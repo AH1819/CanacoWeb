@@ -1,0 +1,294 @@
+html {
+	margin: auto;
+	padding: auto;
+	background: white;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: sans-serif;
+	background-size: cover;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans';
+}
+
+ul {
+	list-style: none;
+}
+
+/*contacto*/
+.caja {
+	margin-top: 50px;
+	justify-content: space-around;
+}
+
+.address {
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+}
+
+/*Logo*/
+.izquierda {
+	width: 125px;
+	height: 125px;
+	float: left;
+	justify-content: space-around;
+	position: center;
+}
+
+.afi {
+	font-size: 20px;
+	text-align: center;
+	justify-content: space-around;
+	font-family: "Verdana, Arial";
+	width: 100px;
+	height: 40px;
+	background: white;
+	display: inline-block;
+	margin-top: 10px;
+}
+
+/*iconos*/
+.parpadea {
+
+	animation-name: parpadeo;
+	animation-duration: 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+
+	-webkit-animation-name: parpadeo;
+	-webkit-animation-duration: 5s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@-moz-keyframes parpadeo {
+	0% {
+		opacity: 1.0;
+	}
+
+	50% {
+		opacity: 0.0;
+	}
+
+	100% {
+		opacity: 1.0;
+	}
+}
+
+@-webkit-keyframes parpadeo {
+	0% {
+		opacity: 1.0;
+	}
+
+	50% {
+		opacity: 0.0;
+	}
+
+	100% {
+		opacity: 1.0;
+	}
+}
+
+@keyframes parpadeo {
+	0% {
+		opacity: 1.0;
+	}
+
+	50% {
+		opacity: 0.0;
+	}
+
+	100% {
+		opacity: 1.0;
+	}
+}
+
+/*-------------------------------*/
+
+/*slader*/
+
+
+.wrapper {
+	width: auto;
+	margin: 0 auto;
+}
+
+.slider-controler {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	text-align: justify;
+	padding: 5px;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 100;
+}
+
+.slider-controler li {
+	margin: 0 0.5rem;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.slider-controler a {
+	display: inline-block;
+	vertical-align: top;
+	text-decoration: none;
+	color: white;
+	font-size: 1.5rem;
+}
+
+/*----------------------------------*/
+
+/*menu de navegacion*/
+.menu-nav {
+	width: auto;
+	margin: auto;
+	background-color: rgb(39, 18, 205);
+	font-size: 20px;
+	margin-top: 50px;
+	position: relative;
+	z-index: 1000;
+	border: 1px solid black;
+}
+
+.menu-horizontal {
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+}
+
+.menu-horizontal>li>a {
+	display: block;
+	padding: 15px 20px;
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+}
+
+.menu-horizontal>li:hover {
+	background-color: rgb(11, 51, 85);
+}
+.menu-vertical {
+	position: absolute;
+	display: none;
+	list-style: none;
+	width: 193px;
+	background-color: rgb(11, 51, 85);
+}
+
+.menu-horizontal li:hover .menu-vertical {
+	display: block;
+}
+.text-dif{
+	text-align: center;
+}
+.menu-vertical>li:hover .text-dif{
+	color: black;
+	background-color: rgba(245, 240, 240, 0.61);
+}
+
+.menu-vertical li a {
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding: 15px 15px 15px 20px;
+}
+
+.titulo-inicio{
+	width: 93px;
+}
+.titulo-nav{
+	width: 193px;
+	text-align: center;
+}
+
+.contacto {
+	font-family: sans-serif;
+	position: relative;
+	margin-left: 20px;
+}
+
+.text1 {
+	font-family: sans-serif;
+	position: absolute;
+	margin-top: 25px;
+	margin-left: 80px;
+	width: 100px;
+	height: 100px;
+	font-size: 50px;
+}
+
+.text2 {
+	font-family: sans-serif;
+	position: absolute;
+	margin-top: 85px;
+	margin-left: 80px;
+	font-size: 40px;
+	width: 100px;
+	height: 100px;
+}
+
+.vertical {
+	float: left;
+	transform: rotate(90deg);
+	transform-origin: left top 0;
+	margin-left: 50px;
+	padding: 10px;
+	background-color: rgba(37, 34, 34, 0.3);
+	opacity: 0.9;
+	font-size: 25px;
+	color: blue;
+	text-transform: uppercase;
+
+}
+
+.contact {
+	position: absolute;
+	margin-top: 220px;
+	font-size: 20px;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.slider {
+	position: relative;
+}
+
+.icons1 {
+	cursor: pointer;
+	font-size: 45px;
+	margin-top: 15px;
+	margin-left: 0px;
+	padding: 15px;
+	float: inline-start;
+	justify-content: space-around;
+	color: rgb(3, 16, 201);
+}
+
+.icons2 {
+	font-size: 45px;
+	margin-top: 15px;
+	margin-left: -80px;
+	padding: 15px;
+	float: inline-start;
+	justify-content: space-around;
+	color: rgb(3, 16, 201);
+}
+
+.icons3 {
+	font-size: 45px;
+	margin-top: 15px;
+	margin-left: -80px;
+	padding: 15px;
+	float: inline-start;
+	justify-content: space-around;
+	color: rgb(3, 16, 201);
+}
